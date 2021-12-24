@@ -15,4 +15,13 @@ describe 'Solver' do
       expect(solver.factorial(6)).to eq 720
     end
   end
+
+  context '#reverse' do
+  it 'returns a reversed string' do
+    expect(solver.reverse('hello')).to eq 'olleh'
+  end
+
+  it 'returns a reversed string' do
+    expect(solver.reverse('hello world')).to eq 'dlrow olleh'
+  end
 end
