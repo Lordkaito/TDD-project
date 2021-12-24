@@ -1,8 +1,8 @@
 class Solver
-  def factorial(n)
-    return 1 if n <= 1
+  def factorial(num)
+    return 1 if num <= 1
 
-    n * factorial(n - 1)
+    num * factorial(num - 1)
   end
 
   def reverse(str)
@@ -10,13 +10,9 @@ class Solver
   end
 
   def fizzbuzz(sth)
-    if (sth % 15).zero?
-      return 'fizzbuzz'
-    elsif (sth % 5).zero?
-      return 'buzz'
-    elsif (sth % 3).zero?
-      return 'fizz'
-    end
+    return 'fizzbuzz' if (sth % 15).zero?
+    return 'buzz' if (sth % 5).zero?
+    return 'fizz' if (sth % 3).zero?
 
     'not divisable'
   end
