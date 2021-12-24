@@ -1,7 +1,7 @@
 class Solver
   def factorial(num)
     error = ArgumentError.new('Argument must be a positive integer')
-    raise error if num < 0
+    raise error if num.negative?
     return 1 if num <= 1
 
     num * factorial(num - 1)

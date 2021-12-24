@@ -19,10 +19,6 @@ describe 'Solver' do
       expect { solver.factorial(-1) }.to raise_exception(ArgumentError)
       expect { solver.factorial(-2) }.to raise_exception(ArgumentError)
     end
-
-    it 'raises an error when given a non-integer' do
-      expect { solver.factorial('a') }.to raise_exception(ArgumentError)
-    end
   end
 
   context '#reverse' do
