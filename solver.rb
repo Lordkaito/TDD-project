@@ -4,12 +4,13 @@ class Solver
     n*factorial(n-1)
   end
 
-  def reverse; end
+  def reverse(str)
+   str.reverse!
+  end
 
   def fizzbuzz; end
 end
 
-# temp = Solver.new
+temp = Solver.new
 
-# puts temp.factorial(0)
-# puts temp.factorial(1)
+puts temp.reverse("sam")
