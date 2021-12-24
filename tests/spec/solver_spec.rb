@@ -17,11 +17,25 @@ describe 'Solver' do
   end
 
   context '#reverse' do
-  it 'returns a reversed string' do
-    expect(solver.reverse('hello')).to eq 'olleh'
+    it 'returns a reversed string' do
+      expect(solver.reverse('hello')).to eq 'olleh'
+    end
+
+    it 'returns a reversed string' do
+      expect(solver.reverse('hello world')).to eq 'dlrow olleh'
+    end
   end
 
-  it 'returns a reversed string' do
-    expect(solver.reverse('hello world')).to eq 'dlrow olleh'
-  end
+  context '#fizzbuzz' do
+    it 'returns "fizz" when N is divisible by 3' do
+      expect(solver.fizzbuzz(3)).to eq 'fizz'
+    end
+
+    it 'returns "buzz" when N is divisible by 5' do
+      expect(solver.fizzbuzz(5)).to eq 'buzz'
+    end
+
+    it 'returns "fizzbuzz" when N is divisible by 3 and 5' do
+      expect(solver.fizzbuzz(15)).to eq 'fizzbuzz'
+    end
 end
