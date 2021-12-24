@@ -1,4 +1,4 @@
-require_relative '../../solver.rb'
+require_relative '../../solver'
 
 describe 'Solver' do
   subject(:solver) { Solver.new }
@@ -38,4 +38,5 @@ describe 'Solver' do
     it 'returns "fizzbuzz" when N is divisible by 3 and 5' do
       expect(solver.fizzbuzz(15)).to eq 'fizzbuzz'
     end
+  end
 end
